@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RACE</title>
+    <link rel="stylesheet" href="visual.css"> </head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#regras">Regras</a></li>
+                <li><a href="#trajetos">Trajetos</a></li>
+                <li><a href="#ranking">Ranking</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="regras" class="page-section active">
+            <h2>Regras</h2>
+            <li>Utilize qualquer tipo de carro, porém, saiba que os outros estarão com carros rápidos</li>
+            <li>Sem brigas no ambiente, caso contrário, a corrida se encerra</li>
+            <li>É recomendado que não entre em contato uns com os outros, chegue apenas e fique atrás/ao lado dos carros</li>
+            <li>Cada carro ficará alinhado com no máximo duas linhas, as duas aos cantos da via</li>
+            <li>Nosso unico contato é apenas pela DeepWeb #Kamikaze.Race</li>
+            <li>O jogo é baseado em um sistema de pontos, onde cada jogador acumula pontos ao completar trajetos e vencer corridas</li>
+            <li>As corridas são normalmente de noite em horário pré-marcado</li>
+            <li>O ponto de encontro é sempre atualizado semanalmente neste site</li>
+            <li>Chegue ao local previsto na hora exata ou um pouco antes, pelo menos 5 minutos</li>
+            <li>Não temos a questão de priorizar ninguém, caso chegue atrasado, será desclassificado</li>
+            <li>Caso queiram apostar, apostem consigo mesmos, o líder da corrida não tem envolvimento</li>
+            <li>Se houver polícia no local, tente despistá-la, não as traga para a corrida</li>
+            <li>O líder chega sempre nos dois a três minutos antes do horário e, quando der o horário, inicia a corrida</li>
+            <li>A corrida começa no ponto C/F do mapa, esse é o ponto de encontro</li>
+            <li>Ao final das corridas, caso queira aparecer e esteja em 1° ao 3°, diga o seu apelido ao líder da corrida</li>
+            </section>
+
+        <section id="trajetos" class="page-section">
+            <h2>Próximo trajeto</h2>
+            <p>A próxima corrida será no dia 04 Jul 2025, às 22:00 no </p>
+            <div class="zoom-wrapper">
+                <img src="assets/img/Waiting.png" alt="Trajeto da Corrida" id="imagem-trajeto">
+            </div>    
+            </section>
+
+        <section id="ranking" class="page-section">
+            <h2>Ranking</h2>
+            <p>1. K4m1k4z3</p>
+            <p>2. B.Rush</p>
+            <p>3. Hustle</p>
+            <p>4. Waiting...</p>
+            <p>5. Waiting...</p>
+            </section>
+    </main>
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/@panzoom/panzoom/dist/panzoom.min.js"></script>
+    <script>
+        const imagem = document.getElementById('imagem-trajeto');
+        const panzoom = Panzoom(imagem, {
+            maxScale: 5,
+            minScale: 1,
+            contain: 'outside'
+        });
+        imagem.parentElement.addEventListener('wheel', panzoom.zoomWithWheel);
+    </script>
+</body>
+</html>

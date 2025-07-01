@@ -187,7 +187,7 @@ function handleEventKey(event) {
           "[OK] Inicializando sistema...",
           "[OK] Verificando conexão com servidor MIDNIGHT CLUB...",
           "[OK] Estabelecendo handshake...",
-          "[OK] Acesso autorizado para ID: #${randomId}",
+          '[OK] Acesso autorizado para ID: #${randomId}',
           "[OK] Redirecionando para o sistema..."
         ];
 

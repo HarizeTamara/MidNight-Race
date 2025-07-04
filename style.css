@@ -70,7 +70,7 @@ span {
   grid-template-rows: 18% 1fr;
 }
 
-.container_challenge_title {
+/* .container_challenge_title {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -82,7 +82,7 @@ span {
 
   text-align: center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.452);
-}
+} */
 
 .container_challenge_code-input {
   display: flex;
